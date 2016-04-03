@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["docpad-plugin"],
+  "keywords": [
+    "docpad-plugin"
+  ],
   "author": "Nishant Rodrigues <nishantjr@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "markdown-it": "^6.0.1"
+  }
 }
