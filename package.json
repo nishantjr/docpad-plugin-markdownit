@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-markdown-it",
-  "version": "1.0.0",
+  "version": "2.0.0-dev",
   "description": "Plugin to render markdown using the markdown-it library.",
   "main": "index.js",
   "scripts": {
