@@ -1,12 +1,12 @@
 {
-  "name": "markdown-it",
-  "version": "2.0.0",
-  "description": "",
+  "name": "docpad-plugin-markdown-it",
+  "version": "1.0.0",
+  "description": "Plugin to render markdown using the markdown-it library.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Nishant Rodrigues <nishantjr@gmail.com>",
+  "license": "MIT"
 }
