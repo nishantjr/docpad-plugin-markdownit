@@ -1,9 +1,14 @@
 'use strict'
 
-const md = require('markdown-it')()
 
 const plugin = {
     name: 'markdownit',
+    docpadReady: (opts, next) => {
+        const config = opts.docpad.config.markdownitOptions || {}
+        config.preset = config.preset ? config.preset : "default"
+        this.md = require('markdown-it')(config.preset, config.opts)
+        next()
+    },
     render: (opts, next) => {
         if (opts.inExtension != 'md' &&
             opts.inExtension != 'markdown')
@@ -11,7 +16,7 @@ const plugin = {
         if (opts.outExtention != null &&
             opts.outExtention != 'html')
            return next()
-        opts.content = md.render(opts.content)
+        opts.content = this.md.render(opts.content)
         next()
     }
 
